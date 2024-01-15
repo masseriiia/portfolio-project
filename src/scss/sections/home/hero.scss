@@ -1,0 +1,70 @@
+.hero {
+  padding-top: 55px;
+
+  &__inner {
+    display: flex;
+    gap: 170px;
+  }
+
+  &__information {
+    margin-top: 100px;
+    max-width: 698px;
+
+    &_subtitle {
+      margin-bottom: 6px;
+      font-family: $ff;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: normal;
+      letter-spacing: 0.72px;
+      color: $black;
+    }
+
+    &_name {
+      font-family: $ff;
+      font-size: 32px;
+      font-weight: 600;
+      line-height: normal;
+      letter-spacing: 0.96px;
+      color: #FD6F00;
+    }
+
+    &_speciality {
+      margin: 0;
+      font-family: $ff;
+      font-size: 100px;
+      font-weight: 700;
+      line-height: 97%;
+      letter-spacing: 3px;
+
+      &:nth-child(2) {
+        margin-bottom: 34px;
+        text-align: right;
+      }
+    }
+
+    &_description {
+      margin-bottom: 22px;
+      font-family: $ff;
+      font-size: 21px;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 0.63px;
+      color: $black;
+    }
+  }
+
+  &__image {
+    margin-bottom: 25px;
+  }
+
+  &__button {
+    padding: 11px 53px;
+  }
+
+  &__socials {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+  }
+}
