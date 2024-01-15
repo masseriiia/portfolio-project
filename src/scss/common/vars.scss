@@ -4,21 +4,19 @@ $sm	: 480px;
 $md	: 768px;
 $lg	: 992px;
 $xl	: 1200px;
-$xxl: 1400px;
+$xxl: 1366px;
 
 // Container max-width.
 $container-md: 760px;
 $container-lg: 990px;
 $container-xl: 1200px;
-$container-xxl: 1400px;
 
 // Container padding.
-$container-padding: 10px;
+$container-padding: 24px;
 
 // Font families.
-$ff-title	: 'Montserrat', sans-serif;
-$ff			: 'Poppins', sans-serif;
-
+$ff			: Arial, sans-serif;
+$ff-title	: Arial, sans-serif;
 
 // Font sizes.
 $fs-xs	: 12px;
