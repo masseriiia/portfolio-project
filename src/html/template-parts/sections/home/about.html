@@ -1,0 +1,21 @@
+<section class="about">
+    <div class="container">
+        <div class="about__inner">
+            <div class="about__image">
+                <img src="img/about/man.png" alt="Man">
+            </div>
+            <div class="about__information">
+                <h2 class="about__information_title">About Me </h2>
+                <p class="about__information_text">Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium. Turpis tempus pharetra</p>
+                <div class="about__skills">
+                    @@loop('./skill.html', [
+                        {'name': 'UX', 'skill': 'about__skill_percent-one'},
+                        {'name': 'Website Design', 'skill': 'about__skill_percent-two'},
+                        {'name': 'App Design', 'skill': 'about__skill_percent-three'},
+                        {'name': 'Graphic Design', 'skill': 'about__skill_percent-four'}
+                    ])
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

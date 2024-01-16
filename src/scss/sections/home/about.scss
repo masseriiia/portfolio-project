@@ -1,0 +1,92 @@
+.about {
+  padding-top: 46px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__information {
+    max-width: 756px;
+
+    &_title {
+      font-family: $ff;
+      font-size: 65px;
+      font-weight: 600;
+      line-height: normal;
+      letter-spacing: 1.95px;
+      color: $black;
+    }
+
+    &_text {
+      margin-bottom: 23px;
+      font-family: $ff;
+      font-size: 21px;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 0.63px;
+      color: $black;
+    }
+  }
+
+  &__skills {
+  }
+
+  &__skill {
+    &_name {
+      margin-bottom: 18px;
+      font-family: $ff;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: normal;
+      letter-spacing: 0.72px;
+      color: $black;
+    }
+
+    &_band {
+      margin-bottom: 24px;
+      width: 100%;
+      height: 12px;
+      position: relative;
+      background-color: #EDECEC;
+      border-radius: 6px;
+
+      span {
+        position: relative;
+        display: block;
+        height: 12px;
+        background-color: #FD6F00;
+        border-radius: 6px;
+
+        &:before {
+          position: absolute;
+          content: "";
+          width: 25px;
+          height: 25px;
+          right: 0;
+          top: -10px;
+          border-radius: 50%;
+          border: 4px solid #FD6F00;
+          background-color: #EDECEC;
+          filter: drop-shadow(0px 4px 7px rgba(0, 0, 0, 0.20));
+        }
+      }
+    }
+
+    &_percent {
+      &-one {
+        width: 93%;
+      }
+      &-two {
+        width: 89%;
+      }
+      &-three {
+        width: 97%;
+      }
+      &-four {
+        width: 93%;
+      }
+    }
+  }
+}
+
