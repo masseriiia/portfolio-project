@@ -1,16 +1,18 @@
 .hero {
   padding-top: 55px;
+  padding-bottom: 27px;
 
   &__inner {
     display: flex;
-    gap: 170px;
+    gap: 161px;
   }
 
   &__information {
-    margin-top: 100px;
-    max-width: 698px;
+    padding-top: 100px;
+    max-width: 712px;
 
     &_subtitle {
+      padding-left: 9px;
       margin-bottom: 6px;
       font-family: $ff;
       font-size: 24px;
@@ -21,6 +23,7 @@
     }
 
     &_name {
+      padding-left: 4px;
       font-family: $ff;
       font-size: 32px;
       font-weight: 600;
@@ -38,33 +41,42 @@
       letter-spacing: 3px;
 
       &:nth-child(2) {
-        margin-bottom: 34px;
+        margin-bottom: 37px;
         text-align: right;
       }
     }
 
     &_description {
-      margin-bottom: 22px;
+      padding-left: 7px;
+      margin-bottom: 28px;
       font-family: $ff;
       font-size: 21px;
       font-weight: 400;
       line-height: normal;
-      letter-spacing: 0.63px;
+      letter-spacing: 1.35px;
       color: $black;
     }
   }
 
   &__image {
-    margin-bottom: 25px;
+    margin-bottom: 28px;
+    max-width: 500px;
+    max-height: 624px;
   }
 
   &__button {
-    padding: 11px 53px;
+    padding: 11px 58px;
   }
 
   &__socials {
     display: flex;
+    align-items: center;
     justify-content: center;
     gap: 25px;
+  }
+
+  &__social {
+    width: 33px;
+    height: 33px;
   }
 }
