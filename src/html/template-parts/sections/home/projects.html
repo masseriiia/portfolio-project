@@ -1,0 +1,22 @@
+<section class="projects">
+    <div class="container">
+        <div class="projects__inner">
+            <h2 class="projects__title">My Projects</h2>
+            <p class="projects__description">Lorem ipsum dolor sit amet consectetur. Mollis erat duis aliquam mauris est risus lectus. Phasellus consequat urna tellus</p>
+            <div class="projects__tabs">
+                <button class="projects__tab" type="button" data-js-tabs-button="tab-1">All</button>
+                <button class="projects__tab" type="button" data-js-tabs-button="tab-2">UI/UX</button>
+                <button class="projects__tab" type="button" data-js-tabs-button="tab-3">Web Design</button>
+                <button class="projects__tab" type="button" data-js-tabs-button="tab-4">App Design</button>
+                <button class="projects__tab" type="button" data-js-tabs-button="tab-5">Graphic Design</button>
+            </div>
+            <div class="projects__items" data-js-tabs-group>
+                @@loop('./project.html', [
+                {'src': 'img/projects/project-1.png', 'name': 'Web Design ', 'description': 'AirCalling Landing Page Design','data-js-tab': 'data-js-tabs-item="tab-2"'},
+                {'src': 'img/projects/project-2.png', 'name': 'Web Design ', 'description': 'Business Landing Page Design','data-js-tab': 'data-js-tabs-item="tab-3"'},
+                {'src': 'img/projects/project-3.png', 'name': 'Web Design ', 'description': 'Ecom Web Page Design','data-js-tab': 'data-js-tabs-item="tab-4"'},
+                ])
+            </div>
+        </div>
+    </div>
+</section>
