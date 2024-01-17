@@ -1,5 +1,6 @@
 .about {
   padding-top: 46px;
+  padding-bottom: 61px;
 
   &__inner {
     display: flex;
@@ -71,21 +72,6 @@
           background-color: #EDECEC;
           filter: drop-shadow(0px 4px 7px rgba(0, 0, 0, 0.20));
         }
-      }
-    }
-
-    &_percent {
-      &-one {
-        width: 93%;
-      }
-      &-two {
-        width: 89%;
-      }
-      &-three {
-        width: 97%;
-      }
-      &-four {
-        width: 93%;
       }
     }
   }
