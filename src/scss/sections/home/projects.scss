@@ -40,15 +40,13 @@
   &__tab {
     padding: 10px 20px;
     border-radius: 12px;
-
     text-align: center;
     font-family: $ff;
     font-size: 24px;
-    font-weight: 400;
+    font-weight: $fw-regular;
     line-height: normal;
     letter-spacing: 0.72px;
     background-color: $black;
-
     border: 0.4px solid #545454;
     background-color: #F8F8F8;
     transition: all 0.3s ease-in-out;
@@ -57,13 +55,13 @@
     &:focus {
       color: $white;
       border: 0.4px solid $white;
-      background-color: #FD6F00
+      background-color: $orange;
     }
 
     &:hover {
       color: $white;
       border: 0.4px solid $white;
-      background-color: #FD6F00;
+      background-color: $orange;
     }
   }
 
@@ -88,16 +86,16 @@
       margin-bottom: 10px;
       font-family: $ff;
       font-size: 19px;
-      font-weight: 400;
+      font-weight: $fw-regular;
       line-height: normal;
       letter-spacing: 0.57px;
-      color: #FD6F00;
+      color: $orange;
     }
 
     &_description {
       font-family: $ff;
       font-size: 24px;
-      font-weight: 700;
+      font-weight: $fw-bold;
       line-height: normal;
       letter-spacing: 0.72px;
       color: $black;

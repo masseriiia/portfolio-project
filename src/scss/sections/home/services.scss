@@ -7,7 +7,7 @@
     text-align: center;
     font-family: $ff;
     font-size: 65px;
-    font-weight: 600;
+    font-weight: $fw-semibold;
     line-height: normal;
     letter-spacing: 1.95px;
     color: $black;
@@ -21,7 +21,7 @@
     text-align: center;
     font-family: $ff;
     font-size: 21px;
-    font-weight: 400;
+    font-weight: $fw-regular;
     line-height: normal;
     letter-spacing: 0.63px;
     color: $black;
@@ -50,7 +50,7 @@
       margin-bottom: 15px;
       font-family: $ff;
       font-size: 32px;
-      font-weight: 600;
+      font-weight: $fw-semibold;
       line-height: normal;
       letter-spacing: 0.96px;
       color: $black;
@@ -60,7 +60,7 @@
       font-family: $ff;
       min-height: 120px;
       font-size: 19px;
-      font-weight: 400;
+      font-weight: $fw-regular;
       line-height: normal;
       letter-spacing: 0.57px;
       color: $black;

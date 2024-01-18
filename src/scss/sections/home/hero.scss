@@ -16,7 +16,7 @@
       margin-bottom: 6px;
       font-family: $ff;
       font-size: 24px;
-      font-weight: 600;
+      font-weight: $fw-semibold;
       line-height: normal;
       letter-spacing: 0.72px;
       color: $black;
@@ -26,17 +26,17 @@
       padding-left: 4px;
       font-family: $ff;
       font-size: 32px;
-      font-weight: 600;
+      font-weight: $fw-semibold;
       line-height: normal;
       letter-spacing: 0.96px;
-      color: #FD6F00;
+      color: $orange;
     }
 
     &_speciality {
       margin: 0;
       font-family: $ff;
       font-size: 100px;
-      font-weight: 700;
+      font-weight: $fw-bold;
       line-height: 97%;
       letter-spacing: 3px;
 
@@ -51,7 +51,7 @@
       margin-bottom: 28px;
       font-family: $ff;
       font-size: 21px;
-      font-weight: 400;
+      font-weight: $fw-regular;
       line-height: normal;
       letter-spacing: 1.35px;
       color: $black;

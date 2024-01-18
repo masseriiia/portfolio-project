@@ -12,7 +12,7 @@
     margin-bottom: 8px;
     font-family: $ff;
     font-size: 65px;
-    font-weight: 600;
+    font-weight: $fw-semibold;
     line-height: normal;
     letter-spacing: 1.95px;
     color: $black;
@@ -24,7 +24,7 @@
     margin-bottom: 85px;
     font-family: $ff;
     font-size: 21px;
-    font-weight: 400;
+    font-weight: $fw-regular;
     line-height: normal;
     letter-spacing: 0.63px;
     color: $black;
@@ -50,36 +50,31 @@
         flex: 1;
         width: 100%;
         box-sizing: border-box;
-
         text-align: center;
         font-family: $ff;
         font-size: 21px;
-        font-weight: 400;
+        font-weight: $fw-regular;
         line-height: normal;
         letter-spacing: 0.63px;
         color: #797979;
-
         border-radius: 14px;
         border: 1px solid #AFAFAF;
         background: #F8F8F8;
       }
     }
 
-
-
     &_button {
       padding: 20px 37px;
-
       text-align: center;
       font-family: $ff;
       font-size: 24px;
-      font-weight: 600;
+      font-weight: $fw-semibold;
       line-height: normal;
       letter-spacing: 0.72px;
       color: $white;
-
       border-radius: 14px;
-      background-color: #FD6F00;
+      background-color: $orange;
+      cursor: pointer;
     }
   }
 }

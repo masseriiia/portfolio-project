@@ -8,21 +8,6 @@
     gap: 124px;
   }
 
-  &__title {
-    margin: 0;
-    font-family: $ff-title;
-    font-size: 48px;
-    font-weight: 400;
-    line-height: normal;
-    color: var(--light-black, #545454);
-
-    strong {
-      color: $black;
-    }
-  }
-
-
-
   &__nav {
     display: flex;
     gap: 12px;
@@ -31,7 +16,7 @@
       padding: 10px 14px;
       font-family: $ff;
       font-size: 21px;
-      font-weight: 400;
+      font-weight: $fw-regular;
       line-height: normal;
       letter-spacing: 0.63px;
       color: $black;
@@ -58,7 +43,7 @@
     padding: 10px 14px;
     font-family: $ff;
     font-size: 21px;
-    font-weight: 400;
+    font-weight: $fw-regular;
     line-height: normal;
     letter-spacing: 0.63px;
     color: $black;

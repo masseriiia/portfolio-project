@@ -13,7 +13,7 @@
     text-align: center;
     font-family: $ff;
     font-size: 65px;
-    font-weight: 600;
+    font-weight: $fw-semibold;
     line-height: normal;
     letter-spacing: 1.95px;
     color: $black;
@@ -25,7 +25,7 @@
     text-align: center;
     font-family: $ff;
     font-size: 21px;
-    font-weight: 400;
+    font-weight: $fw-regular;
     line-height: normal;
     letter-spacing: 0.63px;
     color: $black;
@@ -73,7 +73,7 @@
       text-align: justify;
       font-family: $ff;
       font-size: 21px;
-      font-weight: 400;
+      font-weight: $fw-regular;
       line-height: normal;
       letter-spacing: 0.42px;
       color: #424242;
@@ -84,7 +84,7 @@
       text-align: justify;
       font-family: $ff;
       font-size: 24px;
-      font-weight: 500;
+      font-weight: $fw-medium;
       line-height: normal;
       letter-spacing: 0.48px;
       color: $black;
@@ -94,7 +94,7 @@
       text-align: justify;
       font-family: $ff;
       font-size: 19px;
-      font-weight: 400;
+      font-weight: $fw-regular;
       line-height: normal;
       letter-spacing: 0.38px;
       color: $black;

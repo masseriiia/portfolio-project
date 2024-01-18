@@ -1,6 +1,5 @@
 .footer {
   padding-top: 103px;
-
   background-color: #F8F8F8;
 
   &__inner {
@@ -31,8 +30,7 @@
       font-family: $ff;
       font-size: 21px;
       text-align: center;
-      font-style: normal;
-      font-weight: 400;
+      font-weight: $fw-regular;
       line-height: normal;
       letter-spacing: 0.63px;
       color: $white;
@@ -40,7 +38,7 @@
 
     span {
       font-weight: 700;
-      color: #FD6F00;
+      color: $orange;
     }
   }
 }
