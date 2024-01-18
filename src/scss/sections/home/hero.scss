@@ -67,16 +67,16 @@
   &__button {
     padding: 11px 58px;
   }
+}
 
-  &__socials {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 25px;
-  }
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
 
-  &__social {
-    width: 33px;
-    height: 33px;
-  }
+.social {
+  width: 33px;
+  height: 33px;
 }

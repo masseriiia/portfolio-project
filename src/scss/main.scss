@@ -10,6 +10,8 @@
 
 // Components
 @import 'components/button';
+@import 'components/swiper-slide';
+@import 'components/logo';
 
 // Header styles.
 @import 'header/header';
@@ -25,5 +27,3 @@
 @import 'sections/home/testimonials';
 @import 'sections/home/subscribe';
 
-// Other styles
-@import 'components/swiper-slide';
