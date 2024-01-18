@@ -1,0 +1,103 @@
+.testimonials {
+  padding-top: 70px;
+  padding-bottom: 70px;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    margin-bottom: 13px;
+    text-align: center;
+    font-family: $ff;
+    font-size: 65px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.95px;
+    color: $black;
+  }
+
+  &__desc {
+    margin-bottom: 8%;
+    max-width: 932px;
+    text-align: center;
+    font-family: $ff;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.63px;
+    color: $black;
+  }
+
+  &__item {
+    padding: 55px 77px 53px 48px;
+    display: flex;
+    align-items: start;
+    max-width: 1087px;
+    border-radius: 14px;
+    background-color: #F8F8F8;
+
+    &_image {
+      margin-right: 44px;
+    }
+  }
+
+  &__description {
+    position: relative;
+
+    &_quote {
+      &-upper {
+        position: absolute;
+        left: -4%;
+        top: 4%;
+      }
+
+      &-lower {
+        position: absolute;
+        right: 33%;
+        bottom: 35%;
+      }
+    }
+
+    &_image {
+      width: 235px;
+      height: 235px;
+    }
+
+    &_text {
+      padding-top: 25px;
+      margin-bottom: 19px;
+      max-width: 698px;
+      text-align: justify;
+      font-family: $ff;
+      font-size: 21px;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 0.42px;
+      color: #424242;
+    }
+
+    &_name {
+      margin-bottom: 5px;
+      text-align: justify;
+      font-family: $ff;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 0.48px;
+      color: $black;
+    }
+
+    &_speciality {
+      text-align: justify;
+      font-family: $ff;
+      font-size: 19px;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 0.38px;
+      color: $black;
+    }
+  }
+}
