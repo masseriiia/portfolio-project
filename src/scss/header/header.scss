@@ -8,32 +8,14 @@
     justify-content: space-between;
     align-items: center;
 
-    @media all and (min-width: 1440px) {
+    @media all and (min-width: 1200px) {
       display: flex;
       justify-content: start;
       gap: 124px;
     }
   }
 
-  &__nav {
-    display: flex;
-    gap: 12px;
 
-    &-item {
-      padding: 10px 14px;
-      font-family: $ff;
-      font-size: 21px;
-      font-weight: $fw-regular;
-      line-height: normal;
-      letter-spacing: 0.63px;
-      color: $black;
-      text-decoration: none;
-
-      &:hover {
-        color: #ff8900;
-      }
-    }
-  }
 
   @media all and (min-width: $md) {
     padding-top: 50px;
@@ -54,7 +36,7 @@
   align-items: center;
   gap: 24px;
 
-  @media all and (min-width: 1440px) {
+  @media all and (min-width: 1200px) {
     display: flex;
   }
 
@@ -100,9 +82,17 @@
     @media all and (min-width: $lg) {
       font-size: 21px;
     }
+
+    @media all and (min-width: $xl) {
+      font-size: $fs-md;
+    }
+
+    @media all and (min-width: $xxl) {
+      font-size: 21px;
+    }
   }
 
-  @media all and (min-width: 1440px) {
+  @media all and (min-width: 1200px) {
     flex-direction: row;
   }
 }

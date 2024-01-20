@@ -17,4 +17,8 @@
     background-color: #d35902;
     box-shadow: 1px 4px 14px -2px rgba(34, 60, 80, 0.23);
   }
+
+  @media all and (min-width: $xl) {
+    font-size: $fs-sm;
+  }
 }

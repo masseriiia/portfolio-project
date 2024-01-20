@@ -21,7 +21,19 @@
   }
 
   &__logo {
-    margin-bottom: 61px;
+    margin-bottom: 42px;
+
+    @media all and (min-width: $lg) {
+      margin-bottom: 52px;
+    }
+
+    @media all and (min-width: $xl) {
+      margin-bottom: 58px;
+    }
+
+    @media all and (min-width: $xl) {
+      margin-bottom: 61px;
+    }
   }
 
   &__nav {
@@ -31,13 +43,13 @@
       text-align: center;
       font-size: $fs-sm;
 
-      @media all and (min-width: $md) {
-        text-align: start;
+
+      @media all and (min-width: $lg) {
         font-size: $fs-md;
       }
 
-      @media all and (min-width: $lg) {
-        font-size: $fs-lg;
+      @media all and (min-width: $xl) {
+        font-size: $fs-md;
       }
 
       @media all and (min-width: $xl) {

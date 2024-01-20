@@ -136,7 +136,7 @@
 
     &_image {
       margin-bottom: 28px;
-      width: 280px;
+      width: 300px;
       height: 300px;
 
       @media all and (min-width: $lg) {
@@ -151,7 +151,7 @@
     }
 
     &_name {
-      margin-bottom: 10px;
+      margin-bottom: 3px;
       font-family: $ff;
       font-size: $fs-sm;
       font-weight: $fw-regular;
@@ -160,10 +160,12 @@
       color: $orange;
 
       @media all and (min-width: $lg) {
+        margin-bottom: 5px;
         font-size: $fs-md;
       }
 
       @media all and (min-width: $xl) {
+        margin-bottom: 10px;
         font-size: 19px;
       }
 
@@ -171,11 +173,15 @@
 
     &_description {
       font-family: $ff;
-      font-size: $fs-lg;
+      font-size: $fs-md;
       font-weight: $fw-bold;
       line-height: normal;
       letter-spacing: 0.72px;
       color: $black;
+
+      @media all and (min-width: $md) {
+        font-size: $fs-lg;
+      }
 
       @media all and (min-width: $lg) {
         font-size: $fs-xl;

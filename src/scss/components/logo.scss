@@ -18,10 +18,14 @@
     }
 
     @media all and (min-width: $md) {
-      font-size: 38px;
+      font-size: 28px;
     }
 
     @media all and (min-width: $xl) {
+      font-size: 32px;
+    }
+
+    @media all and (min-width: $xxl) {
       font-size: 48px;
     }
   }

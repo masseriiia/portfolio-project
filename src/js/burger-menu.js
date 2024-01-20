@@ -31,15 +31,9 @@ const setBurgerMenu = () => {
                 document.body.style.backgroundColor = 'white'
                 header.style.backgroundColor = 'inherit'
                 document.body.style.overflow = 'visible'
-            } else {
-                document.body.style.overflow = 'hidden'
-                header.style.backgroundColor = 'black'
-                document.body.style.backgroundColor = 'black'
             }
         })
     })
-
-
 
     window.addEventListener("resize", () => {
         if (window.innerWidth > 1440) {
