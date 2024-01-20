@@ -1,6 +1,18 @@
 .footer {
-  padding-top: 103px;
+  padding-top: 52px;
   background-color: #F8F8F8;
+
+  @media all and (min-width: $md) {
+    padding-top: 68px;
+  }
+
+  @media all and (min-width: $lg) {
+    padding-top: 83px;
+  }
+
+  @media all and (min-width: $xl) {
+    padding-top: 103px;
+  }
 
   &__inner {
     display: flex;
@@ -14,7 +26,27 @@
 
   &__nav {
     margin-bottom: 81px;
+
+    &-item {
+      text-align: center;
+      font-size: $fs-sm;
+
+      @media all and (min-width: $md) {
+        text-align: start;
+        font-size: $fs-md;
+      }
+
+      @media all and (min-width: $lg) {
+        font-size: $fs-lg;
+      }
+
+      @media all and (min-width: $xl) {
+        font-size: 21px;
+      }
+    }
   }
+
+
 
   &__socials {
     margin-bottom: 62px;
@@ -28,12 +60,24 @@
 
     p {
       font-family: $ff;
-      font-size: 21px;
+      font-size: $fs-xs;
       text-align: center;
       font-weight: $fw-regular;
       line-height: normal;
       letter-spacing: 0.63px;
       color: $white;
+
+      @media all and (min-width: $md) {
+        font-size: $fs-lg;
+      }
+
+      @media all and (min-width: $lg) {
+        font-size: $fs-xl;
+      }
+
+      @media all and (min-width: $xl) {
+        font-size: 21px;
+      }
     }
 
     span {

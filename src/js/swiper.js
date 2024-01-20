@@ -5,7 +5,20 @@ const initCatalogSlider = () => {
     new Swiper('.swiper', {
         direction: 'horizontal',
         slidesPerView: 1,
-        spaceBetween: -270,
+        breakpoints: {
+            1440: {
+                spaceBetween: -300,
+            },
+            1220: {
+                spaceBetween: 0,
+            },
+            720: {
+                spaceBetween: 40,
+            },
+            320: {
+                spaceBetween: 30,
+            }
+        },
         centeredSlides: true,
         effect: "creative",
         enteredSlides: true,

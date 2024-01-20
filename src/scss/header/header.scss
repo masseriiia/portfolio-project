@@ -1,11 +1,18 @@
 .header {
-  padding-top: 61px;
-  padding-bottom: 60px;
+  padding-top: 31px;
+  padding-bottom: 30px;
 
   &__wrapper {
     display: flex;
     flex-direction: row;
-    gap: 124px;
+    justify-content: space-between;
+    align-items: center;
+
+    @media all and (min-width: 1440px) {
+      display: flex;
+      justify-content: start;
+      gap: 124px;
+    }
   }
 
   &__nav {
@@ -27,22 +34,59 @@
       }
     }
   }
+
+  @media all and (min-width: $md) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  @media all and (min-width: $xl) {
+    padding-top: 61px;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: start;
+    gap: 124px;
+  }
 }
 
 .navigation {
-  display: flex;
+  display: none;
   align-items: center;
   gap: 24px;
+
+  @media all and (min-width: 1440px) {
+    display: flex;
+  }
+
+  &.open__menu {
+    padding-top: 100px;
+    padding-bottom: 30px;
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    background-color: wheat;
+    z-index: 99;
+    overflow: scroll;
+
+    @media all and (min-width: 1440px) {
+      display: none;
+    }
+  }
 }
 
 .nav {
   display: flex;
+  flex-direction: column;
   gap: 12px;
 
   &-item {
     padding: 10px 14px;
     font-family: $ff;
-    font-size: 21px;
+    font-size: 16px;
     font-weight: $fw-regular;
     line-height: normal;
     letter-spacing: 0.63px;
@@ -52,5 +96,13 @@
     &:hover {
       color: #ff8900;
     }
+
+    @media all and (min-width: $lg) {
+      font-size: 21px;
+    }
+  }
+
+  @media all and (min-width: 1440px) {
+    flex-direction: row;
   }
 }

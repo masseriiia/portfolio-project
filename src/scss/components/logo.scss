@@ -1,20 +1,48 @@
 .logo {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
   cursor: pointer;
   text-decoration: none;
 
   &__title {
     margin: 0;
     font-family: $ff-title;
-    font-size: 48px;
+    font-size: 24px;
     font-weight: 400;
     line-height: normal;
-    color: var(--light-black, #545454);
+    color: #545454;
 
     strong {
       color: $black;
     }
+
+    @media all and (min-width: $md) {
+      font-size: 38px;
+    }
+
+    @media all and (min-width: $xl) {
+      font-size: 48px;
+    }
   }
+
+  &__image {
+    width: 39px;
+    height: 39px;
+
+    @media all and (min-width: $md) {
+      width: 47px;
+      height: 47px;
+    }
+
+    @media all and (min-width: $xl) {
+      width: 67px;
+      height: 67px;
+    }
+  }
+
+  @media all and (min-width: $md) {
+    gap: 20px;
+  }
+
 }

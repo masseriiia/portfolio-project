@@ -1,6 +1,21 @@
 .subscribe {
-  padding-top: 70px;
-  padding-bottom: 139px;
+  padding-top: 42px;
+  padding-bottom: 54px;
+
+  @media all and (min-width: $md) {
+    padding-top: 54px;
+    padding-bottom: 78px;
+  }
+
+  @media all and (min-width: $lg) {
+    padding-top: 62px;
+    padding-bottom: 121px;
+  }
+
+  @media all and (min-width: $xl) {
+    padding-top: 70px;
+    padding-bottom: 139px;
+  }
 
   &__inner {
     display: flex;
@@ -11,11 +26,27 @@
   &__title {
     margin-bottom: 8px;
     font-family: $ff;
-    font-size: 65px;
+    font-size: 36px;
     font-weight: $fw-semibold;
     line-height: normal;
     letter-spacing: 1.95px;
     color: $black;
+
+    @media all and (min-width: $sm) {
+      font-size: 42px;
+    }
+
+    @media all and (min-width: $md) {
+      font-size: 48px;
+    }
+
+    @media all and (min-width: $lg) {
+      font-size: 58px;
+    }
+
+    @media all and (min-width: $xl) {
+      font-size: 65px;
+    }
   }
 
   &__description {
@@ -23,11 +54,23 @@
     text-align: center;
     margin-bottom: 85px;
     font-family: $ff;
-    font-size: 21px;
+    font-size: $fs-sm;
     font-weight: $fw-regular;
     line-height: normal;
     letter-spacing: 0.63px;
     color: $black;
+
+    @media all and (min-width: $md) {
+      font-size: $fs-md;
+    }
+
+    @media all and (min-width: $lg) {
+      font-size: $fs-lg;
+    }
+
+    @media all and (min-width: $xl) {
+      font-size: 21px;
+    }
   }
 
   &__form {
@@ -46,7 +89,7 @@
       max-width: 627px;
 
       input {
-        padding: 22px 26px 21px;
+        padding: 10px;
         flex: 1;
         width: 100%;
         box-sizing: border-box;
@@ -60,11 +103,23 @@
         border-radius: 14px;
         border: 1px solid #AFAFAF;
         background: #F8F8F8;
+
+        @media all and (min-width: $md) {
+          padding: 15px 19px 17px;
+        }
+
+        @media all and (min-width: $md) {
+          padding: 18px 23px 18px;
+        }
+
+        @media all and (min-width: $xl) {
+          padding: 22px 26px 21px;
+        }
       }
     }
 
     &_button {
-      padding: 20px 37px;
+      padding: 10px 28px;
       text-align: center;
       font-family: $ff;
       font-size: 24px;
@@ -75,6 +130,14 @@
       border-radius: 14px;
       background-color: $orange;
       cursor: pointer;
+
+      @media all and (min-width: $md) {
+        padding: 15px 34px;
+      }
+
+      @media all and (min-width: $xl) {
+        padding: 20px 37px;
+      }
     }
   }
 }

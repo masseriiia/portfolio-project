@@ -1,6 +1,21 @@
 .testimonials {
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding-top: 36px;
+  padding-bottom: 46px;
+
+  @media all and (min-width: $md) {
+    padding-top: 46px;
+    padding-bottom: 46px;
+  }
+
+  @media all and (min-width: $lg) {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  @media all and (min-width: $xl) {
+    padding-top: 73px;
+    padding-bottom: 70px;
+  }
 
   &__inner {
     display: flex;
@@ -12,11 +27,27 @@
     margin-bottom: 13px;
     text-align: center;
     font-family: $ff;
-    font-size: 65px;
+    font-size: 36px;
     font-weight: $fw-semibold;
     line-height: normal;
     letter-spacing: 1.95px;
     color: $black;
+
+    @media all and (min-width: $sm) {
+      font-size: 42px;
+    }
+
+    @media all and (min-width: $md) {
+      font-size: 48px;
+    }
+
+    @media all and (min-width: $lg) {
+      font-size: 58px;
+    }
+
+    @media all and (min-width: $xl) {
+      font-size: 65px;
+    }
   }
 
   &__desc {
@@ -24,17 +55,31 @@
     max-width: 932px;
     text-align: center;
     font-family: $ff;
-    font-size: 21px;
+    font-size: $fs-sm;
     font-weight: $fw-regular;
     line-height: normal;
     letter-spacing: 0.63px;
     color: $black;
+
+    @media all and (min-width: $md) {
+      font-size: $fs-md;
+    }
+
+    @media all and (min-width: $lg) {
+      font-size: $fs-lg;
+    }
+
+    @media all and (min-width: $xl) {
+      font-size: 21px;
+    }
   }
 
   &__item {
-    padding: 55px 77px 53px 48px;
+
+    padding: 23px 11px 23px 11px;
     display: flex;
-    align-items: start;
+    flex-direction: column;
+    gap: 20px;
     max-width: 1087px;
     border-radius: 14px;
     background-color: #F8F8F8;
@@ -42,24 +87,26 @@
     &_image {
       margin-right: 44px;
     }
+
+    @media all and (min-width: $sm) {
+      padding: 23px 11px 23px 11px;
+    }
+
+    @media all and (min-width: $md) {
+      padding: 55px 77px 53px 48px;
+    }
+
+    @media all and (min-width: $lg) {
+      flex-direction: row;
+      padding: 55px 77px 53px 48px;
+    }
+
+    @media all and (min-width: $xl) {
+      padding: 55px 77px 53px 48px;
+    }
   }
 
   &__description {
-    position: relative;
-
-    &_quote {
-      &-upper {
-        position: absolute;
-        left: -4%;
-        top: 4%;
-      }
-
-      &-lower {
-        position: absolute;
-        right: 33%;
-        bottom: 35%;
-      }
-    }
 
     &_image {
       width: 235px;
@@ -67,37 +114,105 @@
     }
 
     &_text {
+      position: relative;
       padding-top: 25px;
       margin-bottom: 19px;
       max-width: 698px;
       text-align: justify;
       font-family: $ff;
-      font-size: 21px;
+      font-size: $fs-sm;
       font-weight: $fw-regular;
       line-height: normal;
       letter-spacing: 0.42px;
       color: #424242;
+
+      &:after {
+        position: absolute;
+        content: "“";
+        width: 18px;
+        height: 48px;
+        bottom: -20%;
+        text-align: justify;
+        font-family: $ff;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.64px;
+        color: #FD6F00;
+      }
+
+      &:before {
+        position: absolute;
+        content: "“";
+        width: 18px;
+        height: 48px;
+        left: -4%;
+        top: 0;
+        text-align: justify;
+        font-family: $ff;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.64px;
+        color: #FD6F00;
+      }
+
+      @media all and (min-width: $md) {
+        font-size: $fs-md;
+      }
+
+      @media all and (min-width: $lg) {
+        font-size: $fs-lg;
+      }
+
+      @media all and (min-width: $xl) {
+        font-size: 21px;
+      }
     }
 
     &_name {
       margin-bottom: 5px;
       text-align: justify;
       font-family: $ff;
-      font-size: 24px;
+      font-size: $fs-md;
       font-weight: $fw-medium;
       line-height: normal;
       letter-spacing: 0.48px;
       color: $black;
+
+      @media all and (min-width: $md) {
+        font-size: $fs-lg;
+      }
+
+      @media all and (min-width: $lg) {
+        font-size: $fs-xl;
+      }
+
+      @media all and (min-width: $xl) {
+        font-size: 24px;
+      }
     }
 
     &_speciality {
       text-align: justify;
       font-family: $ff;
-      font-size: 19px;
+      font-size: $fs-sm;
       font-weight: $fw-regular;
       line-height: normal;
       letter-spacing: 0.38px;
       color: $black;
+
+      @media all and (min-width: $md) {
+        font-size: $fs-md;
+      }
+
+      @media all and (min-width: $lg) {
+        font-size: $fs-lg;
+      }
+
+      @media all and (min-width: $xl) {
+        font-size: 19px;
+      }
     }
   }
 }

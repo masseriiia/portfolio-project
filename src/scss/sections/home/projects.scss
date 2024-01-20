@@ -1,6 +1,21 @@
 .projects {
-  padding-top: 55px;
-  padding-bottom: 70px;
+  padding-top: 36px;
+  padding-bottom: 48px;
+
+  @media all and (min-width: $md) {
+    padding-top: 42px;
+    padding-bottom: 58px;
+  }
+
+  @media all and (min-width: $lg) {
+    padding-top: 48px;
+    padding-bottom: 64px;
+  }
+
+  @media all and (min-width: $xl) {
+    padding-top: 55px;
+    padding-bottom: 70px;
+  }
 
   &__inner {
     display: flex;
@@ -11,11 +26,27 @@
   &__title {
     margin-bottom: 20px;
     font-family: $ff;
-    font-size: 65px;
+    font-size: 36px;
     font-weight: 600;
     line-height: normal;
     letter-spacing: 1.95px;
     color: #1E1E1E;
+
+    @media all and (min-width: $sm) {
+      font-size: 42px;
+    }
+
+    @media all and (min-width: $md) {
+      font-size: 48px;
+    }
+
+    @media all and (min-width: $lg) {
+      font-size: 58px;
+    }
+
+    @media all and (min-width: $xl) {
+      font-size: 65px;
+    }
   }
 
   &__description {
@@ -23,16 +54,30 @@
     max-width: 921px;
     text-align: center;
     font-family: $ff;
-    font-size: 21px;
+    font-size: $fs-sm;
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.63px;
     color: $black;
+
+    @media all and (min-width: $md) {
+      font-size: $fs-md;
+    }
+
+    @media all and (min-width: $lg) {
+      font-size: $fs-lg;
+    }
+
+    @media all and (min-width: $xl) {
+      font-size: 21px;
+    }
   }
 
   &__tabs {
     margin-bottom: 106px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     flex-direction: row;
     gap: 17px;
   }
@@ -42,11 +87,10 @@
     border-radius: 12px;
     text-align: center;
     font-family: $ff;
-    font-size: 24px;
+    font-size: $fs-md;
     font-weight: $fw-regular;
     line-height: normal;
     letter-spacing: 0.72px;
-    background-color: $black;
     border: 0.4px solid #545454;
     background-color: #F8F8F8;
     transition: all 0.3s ease-in-out;
@@ -63,42 +107,83 @@
       border: 0.4px solid $white;
       background-color: $orange;
     }
+
+    @media all and (min-width: $md) {
+      font-size: $fs-lg;
+    }
+
+    @media all and (min-width: $lg) {
+      font-size: $fs-xl;
+    }
+
+    @media all and (min-width: $xl) {
+      font-size: 24px;
+    }
   }
 
   &__items {
     display: flex;
-    gap: 44px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 42px;
   }
 
   &__item {
 
     &-block {
-      min-height: 601px;
+      max-height: 601px;
     }
 
     &_image {
       margin-bottom: 28px;
-      max-width: 445px;
-      max-height: 489px;
+      width: 280px;
+      height: 300px;
+
+      @media all and (min-width: $lg) {
+        width: 400px;
+        height: 450px;
+      }
+
+      @media all and (min-width: $xl) {
+        width: 445px;
+        height: 489px;
+      }
     }
 
     &_name {
       margin-bottom: 10px;
       font-family: $ff;
-      font-size: 19px;
+      font-size: $fs-sm;
       font-weight: $fw-regular;
       line-height: normal;
       letter-spacing: 0.57px;
       color: $orange;
+
+      @media all and (min-width: $lg) {
+        font-size: $fs-md;
+      }
+
+      @media all and (min-width: $xl) {
+        font-size: 19px;
+      }
+
     }
 
     &_description {
       font-family: $ff;
-      font-size: 24px;
+      font-size: $fs-lg;
       font-weight: $fw-bold;
       line-height: normal;
       letter-spacing: 0.72px;
       color: $black;
+
+      @media all and (min-width: $lg) {
+        font-size: $fs-xl;
+      }
+
+      @media all and (min-width: $xl) {
+        font-size: 24px;
+      }
     }
   }
 }
