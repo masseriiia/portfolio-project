@@ -1,33 +1,26 @@
 document.addEventListener('DOMContentLoaded', () => {
     'use strict'
-    initTabs()
+    changeTab('.projects__tab', '.projects__items')
 })
 
-const initTabs = () => {
-    const buttonElements = document.querySelectorAll('[data-js-tabs-button]');
-    const groupElements = document.querySelectorAll('[data-js-tabs-group]')
+const changeTab = (button, contents ) => {
+    const tabsHeaders = document.querySelectorAll(button);
+    const tabsContents = document.querySelectorAll(contents);
 
-    const onButtonClick = () => {
-        buttonElements.forEach(button => {
-            button.addEventListener('click', (event) => {
-                const tabId = event.target.getAttribute('data-js-tabs-button');
-                showTab(tabId)
-            });
-        });
-    }
+    if (!tabsHeaders.length || !tabsContents.length) return
 
-    const showTab = (tabId) => {
-        groupElements.forEach(group => {
-            const tabs = group.querySelectorAll('.projects__item');
-            tabs.forEach(tab => {
-                if (tabId === 'tab-1' || tab.getAttribute('data-js-tabs-item') === tabId) {
-                    tab.style.display = 'block';
-                } else {
-                    tab.style.display = 'none';
-                }
-            });
+    tabsHeaders.forEach((tab, i, tabs) => {
+        tab.addEventListener('click', () => {
+            const id = tab.dataset.id
+
+            if (!id || tab.classList.contains('active')) return
+
+            tabs.forEach(tabsItem => tabsItem.classList.remove('active'))
+            tab.classList.add('active')
+            tabsContents.forEach(content => content.classList.remove('active'))
+            document.querySelector(`${contents}[data-id="${ id }"]`).classList.add('active')
         })
-    }
-    onButtonClick()
+    })
 }
+
 

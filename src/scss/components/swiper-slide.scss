@@ -1,39 +1,54 @@
 .swiper {
   overflow: visible;
-}
+  &-slide {
+    display: flex;
+    justify-content: center;
+    transition: all 0.4s ease-in-out;
 
-.swiper-slide {
-  display: flex;
-  justify-content: center;
-}
+    &-prev {
+      opacity: 0.5;
+      width: 1000px;
+    }
+    &-next {
+      opacity: 0.5;
+      width: 1000px;
+    }
+  }
 
-.swiper-slide-prev {
-  opacity: 0.5;
-  width: 1000px;
-}
-.swiper-slide-next {
-  opacity: 0.5;
-  width: 1000px;
-}
+  &-pagination {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-top: 90px;
 
-.swiper-pagination {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin-top: 80px;
-}
+    &-bullet {
+      width: 38px;
+      height: 10px;
+      border-radius: 8px;
+      background-color: #D9D9D9;
 
-.swiper-pagination-bullet {
-  width: 57px;
-  height: 16px;
-  border-radius: 8px;
-  background-color: #D9D9D9;
-}
+      @media all and (min-width: $md) {
+        width: 42px;
+        height: 10px;
+      }
 
-.swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background-color: #FD6F00;
+      @media all and (min-width: $lg) {
+        width: 48px;
+        height: 14px;
+      }
+
+      @media all and (min-width: $xl) {
+        width: 57px;
+        height: 16px;
+      }
+
+      &-active {
+        background-color: $orange;
+      }
+    }
+  }
 }

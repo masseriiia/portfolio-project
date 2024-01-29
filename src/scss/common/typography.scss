@@ -64,6 +64,11 @@ p {
 	//}
 }
 
+fieldset {
+	width: 100%;
+	border: none;
+}
+
 b, strong {
 	font-weight: $fw-bold
 }

@@ -75,17 +75,28 @@
   }
 
   &__item {
-
     padding: 23px 11px 23px 11px;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    gap: 20px;
+    gap: 26px;
+    min-height: 334px;
     max-width: 1087px;
     border-radius: 14px;
     background-color: #F8F8F8;
 
     &_image {
-      margin-right: 44px;
+      margin-right: 0px;
+
+      @media all and (min-width: $lg) {
+        flex-direction: row;
+        margin-right: 16px;
+      }
+
+      @media all and (min-width: $xl) {
+        margin-right: 16px;
+      }
     }
 
     @media all and (min-width: 510px) {
@@ -93,16 +104,16 @@
     }
 
     @media all and (min-width: $md) {
-      padding: 55px 77px 53px 48px;
+      padding: 49px 77px 53px 48px;
     }
 
     @media all and (min-width: $lg) {
       flex-direction: row;
-      padding: 55px 77px 53px 48px;
+      padding: 49px 77px 53px 48px;
     }
 
     @media all and (min-width: $xl) {
-      padding: 55px 77px 53px 48px;
+      padding: 49px 77px 53px 48px;
     }
   }
 
@@ -125,20 +136,21 @@
       line-height: normal;
       letter-spacing: 0.42px;
       color: #424242;
+      word-wrap: break-word;
 
       &:after {
         position: absolute;
         content: "“";
         width: 18px;
         height: 48px;
-        bottom: -20%;
+        bottom: -22%;
         text-align: justify;
         font-family: $ff;
         font-size: 32px;
         font-weight: 700;
         line-height: normal;
         letter-spacing: 0.64px;
-        color: #FD6F00;
+        color: $orange;
       }
 
       &:before {
@@ -147,14 +159,14 @@
         width: 18px;
         height: 48px;
         left: -4%;
-        top: 0;
+        top: 4px;
         text-align: justify;
         font-family: $ff;
         font-size: 32px;
         font-weight: 700;
         line-height: normal;
         letter-spacing: 0.64px;
-        color: #FD6F00;
+        color: $orange;
       }
 
       @media all and (min-width: $md) {

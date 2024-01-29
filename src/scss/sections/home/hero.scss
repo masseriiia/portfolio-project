@@ -9,7 +9,7 @@
     justify-content: center;
     gap: 81px;
 
-    @media all and (min-width: 1200px) {
+    @media all and (min-width: $xl) {
       flex-direction: row;
       justify-content: start;
       gap: 130px;

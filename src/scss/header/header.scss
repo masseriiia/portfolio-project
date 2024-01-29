@@ -8,14 +8,12 @@
     justify-content: space-between;
     align-items: center;
 
-    @media all and (min-width: 1200px) {
+    @media all and (min-width: $xl) {
       display: flex;
       justify-content: start;
       gap: 124px;
     }
   }
-
-
 
   @media all and (min-width: $md) {
     padding-top: 50px;
@@ -36,13 +34,12 @@
   align-items: center;
   gap: 24px;
 
-  @media all and (min-width: 1200px) {
+  @media all and (min-width: $xl) {
     display: flex;
   }
 
   &.open__menu {
-    padding-top: 100px;
-    padding-bottom: 30px;
+    padding-top: 65px;
     display: flex;
     position: fixed;
     width: 100vw;
@@ -54,7 +51,12 @@
     z-index: 99;
     overflow: scroll;
 
-    @media all and (min-width: 1440px) {
+    @media all and (min-width: $xxl) {
+      padding-top: 100px;
+      padding-bottom: 30px;
+    }
+
+    @media all and (min-width: $xxl) {
       display: none;
     }
   }
@@ -92,7 +94,7 @@
     }
   }
 
-  @media all and (min-width: 1200px) {
+  @media all and (min-width: $xl) {
     flex-direction: row;
   }
 }

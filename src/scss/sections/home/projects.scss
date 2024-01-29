@@ -96,11 +96,7 @@
     transition: all 0.3s ease-in-out;
     cursor: pointer;
 
-    &:focus {
-      color: $white;
-      border: 0.4px solid $white;
-      background-color: $orange;
-    }
+
 
     &:hover {
       color: $white;
@@ -122,10 +118,29 @@
   }
 
   &__items {
-    display: flex;
+    display: none;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    gap: 42px;
+    gap: 41px;
+
+    display: none;
+
+    &.active {
+      display: flex;
+      background-color: $white;
+      animation: scaleIn 1s forwards ease;
+
+      @keyframes scaleIn {
+        0% {
+          scale: 0;
+        }
+
+        100% {
+          scale: 1;
+        }
+      }
+    }
   }
 
   &__item {
@@ -135,7 +150,7 @@
     }
 
     &_image {
-      margin-bottom: 28px;
+      margin-bottom: 31px;
       width: 300px;
       height: 300px;
 
@@ -168,7 +183,6 @@
         margin-bottom: 10px;
         font-size: 19px;
       }
-
     }
 
     &_description {
@@ -192,4 +206,10 @@
       }
     }
   }
+}
+
+.active {
+  color: $white;
+  border: 0.4px solid $white;
+  background-color: $orange;
 }
